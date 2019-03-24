@@ -1,0 +1,66 @@
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 1;
+  width: 100%;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: black;
+  font-family: "Baloo Chettan", cursive;
+}
+
+.navigation__list {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  height: 100%;
+}
+
+.navigation__item {
+  margin: 0rem;
+}
+
+.navigation__link {
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      #f061fe 50%
+    );
+    background-size: 320%;
+    transition: all 0.5s;
+    border-radius: 5px;
+
+    span {
+      margin-right: 1.5rem;
+      display: inline-block;
+    }
+  }
+
+  &:hover,
+  &:active {
+    background-position: 100%;
+    color: black;
+    transform: translateX(1rem);
+  }
+}

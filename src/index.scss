@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  background-size: cover;
+  background: linear-gradient(
+      to bottom,
+      rgba(51, 204, 202, 0.3),
+      rgba(101, 161, 160, 0.3),
+      rgba(51, 193, 217, 0.3)
+    ),
+    url("./assets/images/home.jpg");
+  background-position: top;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.hero {
+  height: 80vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background: url("./assets/images/hero.jpeg");
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home {
+  background: rgba(0, 0, 12, 1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: 0 90px;
+  transform: translateY(-50px);
+  box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+header {
+  grid-column: 1/-1;
+  grid-row: 1 / span;
+  align-self: flex-start;
+  height: 500px;
+
+  font-family: "Baloo Chettan", cursive;
+  color: white;
+}
+
+svg {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  stroke: none;
+  fill: rgba(46, 174, 203, 0.8);
+  transform: rotateY(360deg);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+  padding: 0 50px;
+
+  h1 {
+    cursor: pointer;
+  }
+}
+
+.navBtn {
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.25);
+    color: #f061fe;
+  }
+}
